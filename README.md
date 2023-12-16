@@ -15,7 +15,8 @@
 
 ## Project Overview
 
-In this project, we aim to develop a system that uses a tiva c This model will analyze motion captured by pip motion sensor and predict the . The result will be displayed on a 128x160 TFT LCD screen. The entire process, and buzzer when motion detected [YouTube link](https://youtube.com/shorts/-CA0Vzc14fw?feature=shared))
+In this project, we aim to develop a system that uses a tiva c This model will analyze motion captured by pip motion sensor and predict the . The result will be displayed on a 128x160 TFT LCD screen. The entire process, and buzzer when motion detected andstepperr motor start running
+[YouTube link](https://youtube.com/shorts/-CA0Vzc14fw?feature=shared))
 
 ## Project Inspiration
 
@@ -23,20 +24,26 @@ This project drew inspiration from  While the core idea remains similar,[Smaart 
 
 ## Required Hardware
 
-1. *TIVA C**: This project is designed for the TIva, but it may work on other boards that support CircuitPython with some modifications. Ensure your board has sufficient GPIO pins, as almost 80% of the Pi Pico's GPIOs are used.This is the main microcontroller responsible for running the program. It's part of the Tiva C series from Texas Instruments.
+1. **keil **: This project is designed for the TIva, but it may work on other boards that support c proogram with some modifications. Ensure your board has sufficient GPIO pins, as almost 80% of the tiva c GPIOs are used.This is the main microcontroller responsible for running the program. It's part of the Tiva C series from Texas Instruments.
 
-2. **128x160 TFT LCD**: You'll need a compatible LCD display. Other displays may work with code adjustments,The code is written to interface with a 4-bit LCD display. The LCD display is connected to the GPIO pins of the Tiva C microcontroller. The connections are defined in the code.
+2. **128x160 TFT LCD**: You'll need a compatible LCD display. Other displays may work with code adjustments,The code is written to interface with a 4-bit LCD display. The LCD display is connected to the GPIOB pins of the Tiva C microcontroller. The connections are defined in the code.
 
 LCD Pins:
-RS (Register Select): Connected to PB0 (GPIOB Pin 0)
-RW (Read/Write): Connected to PB1 (GPIOB Pin 1)
-EN (Enable): Connected to PB2 (GPIOB Pin 2)
+RS (Register Select): Connected to PB0 (GPIOB Pin 0) PB0
+RW (Read/Write): Connected to PB1 (GPIOB Pin 1)PB1
+EN (Enable): Connected to PB2 (GPIOB Pin 2)PB2
 
-3. **PIP motion sensor**: for sensing the motion
+3. **PIP motion sensor**: for sensing the motion (PC4)
 
 4. **HC-05 Bluetooth Module**:This module is used for wireless communication. It appears that the UART5 module of the TM4C123 is configured to communicate with this Bluetooth module. The HC-05 typically has TX and RX pins for serial communication.
 5. **Jumper Cables**: You'll need male-to-female (M-F) and male-to-male (M-M) jumper cables for making various connections.
 
+6. **buzzer**: when the motion detected buzzer starts  (PA2)
+7.  **stepper motor**: when the motion detected   (PA2)
+                        actually the motor starts insteds of we used the led for the output signal use pa2 as the input signal
+![image](https://github.com/re1th123/smartescalatorr/assets/153987405/bd959793-069a-438e-a9f5-0a0b2a930833)
+
+if any doubts refer to the link from the microcontoller lab  [chrome link](https://microcontrollerslab.com/stepper-motor-interfacing-with-tm4c123-tiva-launchpad-keil/)
 
 
 3. **Patience**: Building and fine-tuning this system may require some patience.
@@ -48,7 +55,7 @@ The project aims to display the classification results on the 128x160 TFT LCD, m
 1. **Install keil **: Start by installing  keil 
 
 2. **Download Necessary Library Files**: Visit the microcontroller website to download the necessary library files
-3. **Copy Code Files**: Copy and paste the following files into your board:
+3. **Copy Code Files**: load files into your board:
    - `program.c`
    
 
