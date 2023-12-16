@@ -11,7 +11,7 @@
   - [Tiva c](#Raspberry-Pi-Pico-Pin-Diagram)
   - [Wiring](#wiring)
 
-# Creating a Handwritten Digit Classification System with Raspberry Pi Pico
+# Creating a smart escalator using tiva  c
 
 ## Project Overview
 
