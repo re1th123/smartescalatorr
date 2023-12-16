@@ -15,7 +15,7 @@
 
 ## Project Overview
 
-In this project, we aim to develop a system that uses a tiva c This model will analyze motion captured by pip motion sensor and predict the . The result will be displayed on a 128x160 TFT LCD screen. The entire process, and buzzer when motion detected [YouTube link](https://youtube.com/shorts/z9YVKxLYIeM?feature=share)
+In this project, we aim to develop a system that uses a tiva c This model will analyze motion captured by pip motion sensor and predict the . The result will be displayed on a 128x160 TFT LCD screen. The entire process, and buzzer when motion detected [YouTube link](https://youtube.com/shorts/-CA0Vzc14fw?feature=shared))
 
 ## Project Inspiration
 
@@ -50,15 +50,13 @@ The project aims to display the classification results on the 128x160 TFT LCD, m
 
 ## Installation and Setup
 
-1. **Install CircuitPython on Your Board**: Start by installing CircuitPython on your Raspberry Pi Pico board.
+1. **Install keil **: Start by installing  keil 
 
-2. **Download Necessary Library Files**: Visit the CircuitPython website to download the necessary library files. Alternatively, you can obtain these files from the website and paste them into the "lib" folder on your board.
-
+2. **Download Necessary Library Files**: Visit the microcontroller website to download the necessary library files
 3. **Copy Code Files**: Copy and paste the following files into your board:
-   - `code.py`
-   - `svm_min.py`
+   - `program.py`
+   - 
 
-4. **Copy `arial.bdf` File**: Copy the `arial.bdf` font file to your board. This file is essential for displaying text on the LCD screen.
 
 This step ensures that you have all the required files in place for running your project successfully.
 
@@ -70,7 +68,6 @@ To run and debug your code, follow these steps:
 
 1. Use an Integrated Development Environment (IDE), preferably Thonny IDE.
 
-2. Ensure that your Raspberry Pi Pico is connected to your computer.
 
 3. Refer to the connection details provided below for proper setup and debugging.
 
@@ -78,9 +75,12 @@ Please note that you'll need to configure your IDE to work with your Raspberry P
 
 
 
-## Raspberry Pi Pico Pin Diagram
+## tivapin diagram
+![image](https://github.com/re1th123/smartescalatorr/assets/153987405/d78bdacf-b141-4d17-abbd-da5d8b01d21e)
+![image](https://github.com/re1th123/smartescalatorr/assets/153987405/d2c5aac1-4481-4f45-afaf-864d55d78f2f)
 
-![Raspberry Pi Pico Pin Diagram](picow-pinout.svg)
+
+
 
 ## Wiring
 
@@ -88,16 +88,12 @@ For this project, a substantial amount of wiring is required. It is highly recom
 
 ### LCD Connections
 
-| Display Pin Number | Display Pin Name | Pi Pico Pins |
+| Display Pin Number | Display Pin Name | TIVA  Pins |
 |-------------------|------------------|--------------|
 | 2                 | VCC              | 5V (VBUS)        |
 | 1                 | GND              | GND          |
-| 10                | CS               | GP18         |
-| 6                 | RESET            | GP17         |
-| 7                 | A0               | GP16         |
-| 8                 | SDA              | GP11         |
-| 9                 | SCL              | GP10         |
-| 15                | LED +            | 3.3V         |
+| 10                | d4            | GPIOB4        |
+| 10                | d5           | GPIOB5       |
 
 ### OV7670 Module Connections
 
@@ -106,10 +102,4 @@ For this project, a substantial amount of wiring is required. It is highly recom
 
 ## Wrapping It Up
 
-In this project, we set out to turn our Raspberry Pi Pico into a handwriting detective. We wanted it to look at handwritten digits through its trusty OV7670 camera, figure out what they were, and proudly display the results on its 128x160 TFT LCD screen.
-
-Our inspiration came from [Handwritten digit classification using Raspberry Pi Pico and Machine Learning](https://ashishware.com/2022/09/03/pipico_digit_classification/), but we put our own spin on it. We had to pick the right gear, get those wires connected just right, and make sure we had all the software bits in place. Don't forget the `arial.bdf` font file – it's the unsung hero that made text pop on the screen!
-
-The coolest part? Our Raspberry Pi Pico pulled off the whole show by itself. No fancy computers or clouds needed. It's a testament to what these tiny machines can do when we get creative.
-
-As we wrap things up, we hope this project sparks your imagination. Maybe you'll find your own way to combine microcontrollers, machine learning, and cool displays to bring your ideas to life. Remember, with a dash of patience and a sprinkle of determination, you can make some seriously awesome stuff. 
+the project successfully demonstrates the integration of a Tiva C series microcontroller (TM4C123GH6PM), an HC-05 Bluetooth module, and a 4-bit LCD display to create a motion detection system. The system is designed to detect motion using a push button connected to GPIOC Pin 4 and communicate wirelessly through Bluetooth. The status of the system is indicated by LEDs (PF1, PF2, PF3), and the detected or undetected motion is displayed on the LCD screen.
