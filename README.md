@@ -32,7 +32,7 @@ RS (Register Select): Connected to PB0 (GPIOB Pin 0)
 RW (Read/Write): Connected to PB1 (GPIOB Pin 1)
 EN (Enable): Connected to PB2 (GPIOB Pin 2)
 
-3. **PIP motion sensor**: for sesning the motion
+3. **PIP motion sensor**: for sensing the motion
 
 4. **HC-05 Bluetooth Module**:This module is used for wireless communication. It appears that the UART5 module of the TM4C123 is configured to communicate with this Bluetooth module. The HC-05 typically has TX and RX pins for serial communication.
 5. **Jumper Cables**: You'll need male-to-female (M-F) and male-to-male (M-M) jumper cables for making various connections.
@@ -61,25 +61,31 @@ This step ensures that you have all the required files in place for running your
 
 To run and debug your code, follow these steps:
 
-1. Use an Integrated Development Environment (IDE), preferably Thonny IDE.
+1. Use an Integrated Development Environment (IDE), preferably keil ide
 
 
 3. Refer to the connection details provided below for proper setup and debugging.
 
-Please note that you'll need to configure your IDE to work with your Raspberry Pi Pico for effective code development and debugging.
+
 
 
 
 ## tivapin diagram
 ![image](https://github.com/re1th123/smartescalatorr/assets/153987405/d78bdacf-b141-4d17-abbd-da5d8b01d21e)
-![image](https://github.com/re1th123/smartescalatorr/assets/153987405/d2c5aac1-4481-4f45-afaf-864d55d78f2f)
+![image](https://github.com/re1th123/smartescalatorr/assets/153987405/9351c8a0-cb35-43cf-a5b0-8fe7cb186b9c)
+
+![image](https://github.com/re1th123/smartescalatorr/assets/153987405/9087b586-2241-4a44-883f-a9a918179e17)
+![image](https://github.com/re1th123/smartescalatorr/assets/153987405/46c346a7-1602-431b-9dc6-4df3e5123a4e)
+
+
+
 
 
 
 
 ## Wiring
 
-For this project, a substantial amount of wiring is required. It is highly recommended to use breadboards and jumper cables for a clean and organized setup.
+For this project, a substantial amount of wiring is required. It is highly recommended to use model and jumper cables for a clean and organized setup.
 
 ### LCD Connections
 
