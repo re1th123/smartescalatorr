@@ -1,7 +1,7 @@
 ![PROJECT](project.jpg)
 # Table of Contents
 
-  -   [Smaart escaltor using Tiva c}(#creating-a-handwritten-digit-classification-system-with-raspberry-pi-pico)
+  -   [Smaart escaltor using Tiva c}
   - [Project Overview](#project-overview)
   - [Project Inspiration](#project-inspiration)
   - [Required Hardware](#required-hardware)
@@ -34,15 +34,10 @@ EN (Enable): Connected to PB2 (GPIOB Pin 2)
 
 3. **PIP motion sensor**: for sesning the motion
 
-4. **FHC-05 Bluetooth Module**:This module is used for wireless communication. It appears that the UART5 module of the TM4C123 is configured to communicate with this Bluetooth module. The HC-05 typically has TX and RX pins for serial communication.
+4. **HC-05 Bluetooth Module**:This module is used for wireless communication. It appears that the UART5 module of the TM4C123 is configured to communicate with this Bluetooth module. The HC-05 typically has TX and RX pins for serial communication.
 5. **Jumper Cables**: You'll need male-to-female (M-F) and male-to-male (M-M) jumper cables for making various connections.
 
-6. **4.7k ohm resistor (2)**: These resistors are part of the project's electronic setup
-## Required Software
 
-1. **Any text editor**: You'll need a text editor for editing the code if necessary.
-
-2. **A full Python distribution and pip**: These are required for training and exporting the machine learning model.
 
 3. **Patience**: Building and fine-tuning this system may require some patience.
 
@@ -54,8 +49,8 @@ The project aims to display the classification results on the 128x160 TFT LCD, m
 
 2. **Download Necessary Library Files**: Visit the microcontroller website to download the necessary library files
 3. **Copy Code Files**: Copy and paste the following files into your board:
-   - `program.py`
-   - 
+   - `program.c`
+   
 
 
 This step ensures that you have all the required files in place for running your project successfully.
