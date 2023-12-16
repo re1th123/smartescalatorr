@@ -96,16 +96,52 @@ For this project, a substantial amount of wiring is required. It is highly recom
 
 ### LCD Connections
 
-| Display Pin Number | Display Pin Name | TIVA  Pins |
-|-------------------|------------------|--------------|
-| 2                 | VCC              | 5V (VBUS)        |
-| 1                 | GND              | GND          |
-| 10                | d4            | GPIOB4        |
-| 10                | d5           | GPIOB5       |
+| Display Pin Name | TIVA  Pins |
+|------------------|--------------|
+| VCC              | 5V (VBUS)        |
+| GND              | GND          |
+| RS             | PB0         |
+| RW              |PB 1         |
+| EN           |PB 2         |
+| d4            | PB4        |
+| d5           | PB5       |
+| d6           | PB6       |
+| d7           | PB7       |
 
-### OV7670 Module Connections
+
+### LED Connections(Stepper motor)
+
+| Display Pin Name | TIVA  Pins |
+|------------------|--------------|
+| VCC              | 5V (VBUS)        |
+| GND              | GND          |
+| out            | PA 2      |
+
+### PIP motion sensor Connections(Stepper motor)
+
+| Display Pin Name | TIVA  Pins |
+|------------------|--------------|
+| VCC              | 5V (VBUS)        |
+| GND              | GND          |
+| out            | PC4     |
 
 
+### buzzer Connections(Stepper motor)
+
+| Display Pin Name | TIVA  Pins |
+|------------------|--------------|
+| VCC              | 5V (VBUS)        |
+| GND              | GND          |
+| out            | PA 2      |
+
+### HC-05 bluetooth module Connections(Stepper motor)
+
+| Display Pin Name | TIVA  Pins |
+|------------------|--------------|
+| VCC              | 5V (VBUS)        |
+| GND              | GND          |
+| RX            | PE4      |
+| TX            | PE5      |
 
 
 ## Wrapping It Up
