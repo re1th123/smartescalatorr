@@ -8,14 +8,14 @@
   - [Required Software](#required-software)
   - [Installation and Setup](#installation-and-setup)
   - [Running and Debugging](#running-and-debugging)
-  - [Tiva c](#Raspberry-Pi-Pico-Pin-Diagram)
+  - [Tiva c](#-Pin-Diagram)
   - [Wiring](#wiring)
 
 # Creating a smart escalator using tiva  c
 
 ## Project Overview
 
-In this project, we aim to develop a system that uses a tiva c This model will analyze motion captured by pip motion sensor and predict the . The result will be displayed on a 128x160 TFT LCD screen. The entire process, and buzzer when motion detected andstepperr motor start running
+In this project, we aim to develop a system that uses a tiva c This model will analyze motion captured by PIR motion sensor and predict the . The result will be displayed on a 128x160 TFT LCD screen. The entire process, and buzzer when motion detected andstepperr motor start running
 [YouTube link](https://youtube.com/shorts/-CA0Vzc14fw?feature=shared))
 
 ## Project Inspiration
@@ -33,13 +33,15 @@ RS (Register Select): Connected to PB0 (GPIOB Pin 0) PB0
 RW (Read/Write): Connected to PB1 (GPIOB Pin 1)PB1
 EN (Enable): Connected to PB2 (GPIOB Pin 2)PB2
 
-3. **PIP motion sensor**: for sensing the motion (PC4)
+3. **PIR motion sensor**: for sensing the motion (PC4)
+   ![image](https://github.com/re1th123/smartescalatorr/assets/153987405/cadf7b4b-b4ce-420b-9d7e-55115d85a698)
 
-4. **HC-05 Bluetooth Module**:This module is used for wireless communication. It appears that the UART5 module of the TM4C123 is configured to communicate with this Bluetooth module. The HC-05 typically has TX and RX pins for serial communication.
-5. **Jumper Cables**: You'll need male-to-female (M-F) and male-to-male (M-M) jumper cables for making various connections.
 
-6. **buzzer**: when the motion detected buzzer starts  (PA2)
-7.  **stepper motor**: when the motion detected   (PA2)
+5. **HC-05 Bluetooth Module**:This module is used for wireless communication. It appears that the UART5 module of the TM4C123 is configured to communicate with this Bluetooth module. The HC-05 typically has TX and RX pins for serial communication.
+6. **Jumper Cables**: You'll need male-to-female (M-F) and male-to-male (M-M) jumper cables for making various connections.
+
+7. **buzzer**: when the motion detected buzzer starts  (PA2)
+8.  **stepper motor**: when the motion detected   (PA2)
                         actually the motor starts insteds of we used the led for the output signal use pa2 as the input signal
 ![image](https://github.com/re1th123/smartescalatorr/assets/153987405/bd959793-069a-438e-a9f5-0a0b2a930833)
 
@@ -117,7 +119,7 @@ For this project, a substantial amount of wiring is required. It is highly recom
 | GND              | GND          |
 | out            | PA 2      |
 
-### PIP motion sensor Connections(Stepper motor)
+### PIR motion sensor Connections(Stepper motor)
 
 | Display Pin Name | TIVA  Pins |
 |------------------|--------------|
@@ -146,4 +148,4 @@ For this project, a substantial amount of wiring is required. It is highly recom
 
 ## Wrapping It Up
 
-the project successfully demonstrates the integration of a Tiva C series microcontroller (TM4C123GH6PM), an HC-05 Bluetooth module, and a 4-bit LCD display to create a motion detection system. The system is designed to detect motion using a push button connected to GPIOC Pin 4 and communicate wirelessly through Bluetooth. The status of the system is indicated by LEDs (PF1, PF2, PF3), and the detected or undetected motion is displayed on the LCD screen.
+the project successfully demonstrates the integration of a Tiva C series microcontroller (TM4C123GH6PM), an HC-05 Bluetooth module, and a 4-bit LCD display to create a motion detection system. The system is designed to detect motion  and communicate wirelessly through Bluetooth. , and the detected or undetected motion is displayed on the LCD screen. and escalator starts motion
